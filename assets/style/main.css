@@ -1,5 +1,68 @@
-*{
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
+:root {
+  --clr-gray100: #f0f7f8;
+  --clr-gray200: #cfd8dc;
+  --clr-gray300: #a7b7be;
+  /* --clr-gray00: #f0f7f8; */
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+body {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  width: 100%;
+}
+.illustration-section {
+  height: 100%;
+  background-image: url(/assets/imgs/students.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form-section {
+  /* background: red; */
+  background-color: var(--clr-gray100);
+  /* align-items: center; */
+}
+.form-section .form-container {
+  padding: 0 4rem;
+}
+.form-section .logo {
+  height: 2rem;
+  margin-left: 5rem;
+}
+.form-section .tabs {
+  display: flex;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--clr-gray300);
+  cursor: pointer;
+}
+.form-section .field {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.form-section .login__input {
+  border: none;
+  line-height: 1.4;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  width: 15rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.login__input:focus {
+  outline: none;
+  border: 1px solid blue;
 }
